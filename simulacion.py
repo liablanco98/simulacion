@@ -343,6 +343,6 @@ if __name__=="__main__":
     dif_3=mes_2-mes_1
 
     print()
-    print(f'Lambda para horario no pico: 0.2,  Lambda para horario pico: 0.5, la diferencia de 3 empleados entre 2 es {dif_1}')
-    print(f'Lambda para horario no pico: 0.5,  Lambda para horario pico: 1, la diferencia de 3 empleados entre 2 es {dif_2}')
-    print(f'Lambda para horario no pico: 0.5,  Lambda para horario pico: 1.5, la diferencia de 3 empleados entre 2 es {dif_3}')
+    print(f'Lambda para horario no pico: 0.2,  Lambda para horario pico: 0.5, la diferencia entre 2 y 3 empleados es {dif_1}')
+    print(f'Lambda para horario no pico: 0.5,  Lambda para horario pico: 1, la diferencia entre 2 y 3 empleados es {dif_2}')
+    print(f'Lambda para horario no pico: 0.5,  Lambda para horario pico: 1.5, la diferencia entre 2 y 3 empleados es {dif_3}')

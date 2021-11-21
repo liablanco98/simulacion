@@ -30,7 +30,6 @@ class Cocina:
         self.N_a=0    #cantidad de arribo de pedidos
         self.N_s1=0   #cantidad de salidad de pedidos del empleado 1
         self.N_s2=0   #cantidad de salidad de pedidos del empleado 2
-        self.N_hp=0
 
         self.current_lambda=self.l_nhp
 
@@ -46,7 +45,6 @@ class Cocina:
         #print(f'Cantidad de empleados : {3 if self.caso else 2}')
         #print(f'Lambda para horario no pico: {self.l_nhp},  Lambda para horario pico: {self.l_hp}')
         #print(f'Cantidad de consumidores que entraron : {self.N_a}')
-        #print(f'Cantidad de consumidores que entraron en horario pico: {self.N_hp}')
         #print(f'Cantidad de consumidores que atendio el Primer Empleado : {self.N_s1}')
         #print(f'Cantidad de consumidores que atendio el Segundo Empleado : {self.N_s2}')
         #print(f'Cantidad de clientes que esperaron mas de 5 min en ser atendidos: {self.demora_mas_5_min}')
@@ -134,8 +132,6 @@ class Cocina:
         self.N_a+=1
         c=Consumidor(self.t)
         t_at=a.tiempo_llegada_cliente(self.current_lambda)
-
-        if self.activado_horario_pico: self.N_hp+=1
 
         self.t_a=self.t+t_at   #genero el tiempo de llegada del proximo cliente
         #si un cliente llega despues de cerrado el local no es atendido
